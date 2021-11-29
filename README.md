@@ -9,7 +9,9 @@ You can as well contribute to it as well if you want to.
 ## Directory Structure
 ```sh
 .
+│   .gitignore
 │   README.md
 │
-└── Cow-Bull/
+├── Cow-Bull/
+└── Snake/
 ```
