@@ -12,7 +12,7 @@ class Game:
         self.surface = pygame.display.set_mode((display_size[0]*square_size, display_size[1]*square_size))
         self.surface.fill(fill_color)
         
-        self.snake = Snake(self.surface, 1)
+        self.snake = Snake(self.surface, 2)
         self.snake.draw()
         self.food = Food(self.surface)
         self.food.draw()
@@ -34,20 +34,20 @@ class Game:
 
     def display_score(self):
         font = pygame.font.SysFont("arial", 30)
-        score = font.render(f"Score: {self.snake.length - 1}", True, (255,0,0))
+        score = font.render(f"Score: {self.snake.length - 2}", True, (255,0,0))
         self.surface.blit(score, (display_size[0]*square_size-130, 10))
 
     def show_game_over(self):
         self.surface.fill(fill_color)
         font = pygame.font.SysFont("arial", 30)
-        line_1 = font.render(f"Score: {self.snake.length - 1}", True, (255, 0, 0))
+        line_1 = font.render(f"Score: {self.snake.length - 2}", True, (255, 0, 0))
         line_2 = font.render("To play again, press Enter. To exit, press Escape.", True, (255, 0, 0))
         self.surface.blit(line_1, (display_size[0]*square_size/2 - 50, display_size[1]*square_size/2 - 20))
         self.surface.blit(line_2, (display_size[0]*square_size/2 - 250, display_size[1]*square_size/2 + 20))
         pygame.display.flip()
 
     def reset_game(self):
-        self.snake = Snake(self.surface, 1)
+        self.snake = Snake(self.surface, 2)
         self.food = Food(self.surface)
 
     def play(self):
@@ -84,15 +84,25 @@ class Game:
                         running = False
                     elif event.key == K_RETURN:
                         pause = False
+                    elif event.key == K_SPACE:
+                        pause = not pause
 
                     if not pause:
                         if event.key==K_LEFT or event.key==K_a:
+                            if self.snake.direction == 'r':
+                                break
                             self.snake.move_left()
                         elif event.key==K_RIGHT or event.key==K_d:
+                            if self.snake.direction == 'l':
+                                break
                             self.snake.move_right()
                         elif event.key==K_UP or event.key==K_w:
+                            if self.snake.direction == 'd':
+                                break
                             self.snake.move_up()
                         elif event.key==K_DOWN or event.key==K_s:
+                            if self.snake.direction == 'u':
+                                break
                             self.snake.move_down()
 
                 elif event.type == QUIT:

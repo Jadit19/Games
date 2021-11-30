@@ -20,6 +20,7 @@ isWallAnEnd = False
 ```
 - You can see various customization option there.. Try changing some and see what happens :)
 - You can use the WASD or arrow keys for the snake's movement.
+- Press SPACE key to pause or play the game at any point.
 
 ## Examples
 
@@ -27,4 +28,4 @@ isWallAnEnd = False
 
 ![Final](./Images/final.png)
 
-As you can clearly see, irrespective of language, I'm terrible at this game XD.
+Yes! You guessed it right! This highscore was not made by me, but a friend. As you can clearly see, irrespective of language, I'm terrible at this game XD.
