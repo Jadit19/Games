@@ -21,6 +21,7 @@ isWallAnEnd = False
 - You can see various customization option there.. Try changing some and see what happens :)
 - You can use the WASD or arrow keys for the snake's movement.
 - Press SPACE key to pause or play the game at any point.
+- Alternatively, you can just run the file:  &nbsp;`snake_game.exe`
 
 ## Examples
 
