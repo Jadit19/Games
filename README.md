@@ -13,5 +13,7 @@ You can as well contribute to it as well if you want to.
 │   README.md
 │
 ├── Cow-Bull/
-└── Snake/
+├── Rock-Paper-Scissors/
+├── Snake/
+└── Shooting/
 ```

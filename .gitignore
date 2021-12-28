@@ -1,8 +1,12 @@
 .vscode
 
+Rock-Paper-Scissors/__pycache__
+
 Snake/CPP/a.exe
 Snake/Python/__pycache__
 Snake/Python/src/__pycache__
 
 Shooting/__pycache__
 Shooting/src/__pycache__
+
+Minesweeper/.vscode
