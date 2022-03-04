@@ -13,6 +13,7 @@ You can as well contribute to it as well if you want to.
 │   README.md
 │
 ├── Cow-Bull/
+├── Minesweeper/
 ├── Rock-Paper-Scissors/
 ├── Snake/
 └── Shooting/

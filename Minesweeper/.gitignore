@@ -1,0 +1,4 @@
+**.dll
+main.o
+Minesweeper.exe
+lib/SFML
