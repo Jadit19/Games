@@ -1,0 +1,4 @@
+**.dll
+lib/SFML
+main.o
+Asteroids.exe
