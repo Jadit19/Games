@@ -1,0 +1,4 @@
+lib/SFML
+**.dll
+main.o
+2D_Ray_Casting.exe

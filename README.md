@@ -12,6 +12,7 @@ You can as well contribute to it as well if you want to.
 │   .gitignore
 │   README.md
 │
+├── 2D-Ray-Casting/
 ├── Asteroids/
 ├── Cow-Bull/
 ├── Minesweeper/
